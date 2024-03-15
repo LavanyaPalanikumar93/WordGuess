@@ -5,9 +5,8 @@ public class WordGuess {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
-
         String[] words = {"cat", "pet", "bird", "dog"};
-
+        // creating random
         String secretWord = words[random.nextInt(words.length)];
 
         boolean[] guessedLetters = new boolean[secretWord.length()];
